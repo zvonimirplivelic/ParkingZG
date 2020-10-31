@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 class CarPlate (
     val prefix: String,
     val number: String,
-    val sufix: String
+    val suffix: String
 ) {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

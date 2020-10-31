@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parking_navigation"
+    app:startDestination="@id/addPlateFragment">
+
+    <fragment
+        android:id="@+id/addPlateFragment"
+        android:name="com.zvonimirplivelic.parkingzg.view.fragment.AddPlateFragment"
+        android:label="fragment_add_plate"
+        tools:layout="@layout/fragment_add_plate" >
+        <action
+            android:id="@+id/action_addPlateFragment_to_platesFragment"
+            app:destination="@id/platesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.zvonimirplivelic.parkingzg.view.fragment.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_platesFragment"
+            app:destination="@id/platesFragment" />
+        <action
+            android:id="@+id/action_infoFragment_self2"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/platesFragment"
+        android:name="com.zvonimirplivelic.parkingzg.view.fragment.PlatesFragment"
+        android:label="fragment_plates"
+        tools:layout="@layout/fragment_plates" >
+        <action
+            android:id="@+id/action_platesFragment_to_zonesFragment"
+            app:destination="@id/zonesFragment" />
+        <action
+            android:id="@+id/action_platesFragment_to_addPlateFragment"
+            app:destination="@id/addPlateFragment" />
+        <action
+            android:id="@+id/action_platesFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zonesFragment"
+        android:name="com.zvonimirplivelic.parkingzg.view.fragment.ZonesFragment"
+        android:label="fragment_zones"
+        tools:layout="@layout/fragment_zones" />
+</navigation>
