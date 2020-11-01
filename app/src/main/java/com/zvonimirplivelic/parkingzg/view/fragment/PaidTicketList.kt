@@ -7,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.zvonimirplivelic.parkingzg.R
 
-class PlatesFragment : Fragment() {
+class PaidTicketList : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_plate_list, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_paid_ticket_list, container, false)
     }
 }

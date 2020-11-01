@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">ParkingZG</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+<!-- Parking Info Fragment Strings-->
+    <string name="app_info_text">Pomoću ove aplikacije je moguće platiti parking putem SMS poruke.</string>
+    <string name="plate_info_text">Dodajte registarsku oznaku Vaših vozila. Odaberite registarsku oznaku parkiranog vozila.</string>
+    <string name="plate_deletion_text">Ukoliko želite ukloniti registarsku oznaku vozila sa popisa, pritisnite i držite prst nekoliko sekundi na željenoj registarskoj oznaci.</string>
+    <string name="zone_info_text">Nakon odabira registarke oznake, odaberite parkirnu zonu.</string>
+    <string name="thank_you_msg_text">Velika Vam hvala na korištenju aplikacije</string>
 </resources>

@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical"
     tools:context=".view.fragment.ZonesFragment">
 
-</FrameLayout>
+    <Button
+        android:id="@+id/zone1"
+        style="@style/ZoneButtons"
+        android:background="@color/red"
+        android:text="Zona 1" />
+
+    <Button
+        android:id="@+id/zone2"
+        style="@style/ZoneButtons"
+        android:background="@color/yellow"
+        android:text="Zona 2" />
+
+    <Button
+        android:id="@+id/zone3"
+        style="@style/ZoneButtons"
+        android:background="@color/green"
+        android:text="Zona 3" />
+</LinearLayout>

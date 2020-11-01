@@ -30,7 +30,7 @@
         android:id="@+id/platesFragment"
         android:name="com.zvonimirplivelic.parkingzg.view.fragment.PlatesFragment"
         android:label="fragment_plates"
-        tools:layout="@layout/fragment_plates" >
+        tools:layout="@layout/fragment_plate_list" >
         <action
             android:id="@+id/action_platesFragment_to_zonesFragment"
             app:destination="@id/zonesFragment" />
