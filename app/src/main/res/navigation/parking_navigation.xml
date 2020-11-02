@@ -22,9 +22,6 @@
         <action
             android:id="@+id/action_infoFragment_to_platesFragment"
             app:destination="@id/platesFragment" />
-        <action
-            android:id="@+id/action_infoFragment_self2"
-            app:destination="@id/infoFragment" />
     </fragment>
     <fragment
         android:id="@+id/platesFragment"
@@ -40,10 +37,18 @@
         <action
             android:id="@+id/action_platesFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_platesFragment_to_paidTicketListFragment"
+            app:destination="@id/paidTicketListFragment" />
     </fragment>
     <fragment
         android:id="@+id/zonesFragment"
         android:name="com.zvonimirplivelic.parkingzg.view.fragment.ZonesFragment"
         android:label="fragment_zones"
         tools:layout="@layout/fragment_zones" />
+    <fragment
+        android:id="@+id/paidTicketListFragment"
+        android:name="com.zvonimirplivelic.parkingzg.view.fragment.PaidTicketListFragment"
+        android:label="paid_ticket_list_item"
+        tools:layout="@layout/paid_ticket_list_item" />
 </navigation>

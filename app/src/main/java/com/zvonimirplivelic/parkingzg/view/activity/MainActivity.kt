@@ -1,4 +1,4 @@
-package com.zvonimirplivelic.parkingzg.view
+package com.zvonimirplivelic.parkingzg.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

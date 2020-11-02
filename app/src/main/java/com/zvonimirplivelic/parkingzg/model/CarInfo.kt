@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-class CarPlate (
+class CarInfo (
     val prefix: String,
     val number: String,
     val suffix: String

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.zvonimirplivelic.parkingzg.R
 
-class PaidTicketList : Fragment() {
+class PaidTicketListFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -4,10 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.zvonimirplivelic.parkingzg.model.CarPlate
+import com.zvonimirplivelic.parkingzg.model.CarInfo
 import com.zvonimirplivelic.parkingzg.model.PaidTicket
 
-@Database(entities = [CarPlate::class, PaidTicket::class], version = 1, exportSchema = false)
+@Database(entities = [CarInfo::class, PaidTicket::class], version = 1, exportSchema = false)
 abstract class CarPlateDatabase : RoomDatabase() {
     abstract fun carPlateDao(): CarPlateDao
 
