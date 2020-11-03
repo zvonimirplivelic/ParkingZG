@@ -5,6 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
+    android:weightSum="4"
     tools:context=".view.fragment.AddPlateFragment">
 
+    <EditText
+        android:id="@+id/etPlateNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite vašu registarsku oznaku"
+        app:layout_constraintBottom_toTopOf="@id/etCarManufacturer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etCarManufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite proizvodžača vašeg vozila"
+        app:layout_constraintBottom_toTopOf="@id/etPlateNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCarModel" />
+
+
+    <EditText
+        android:id="@+id/etCarModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite model vašeg vozila"
+        app:layout_constraintBottom_toTopOf="@id/btnAddPlate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCarManufacturer" />
+
+    <Button
+        android:id="@+id/btnAddPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="16dp"
+        android:textColorLink="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
