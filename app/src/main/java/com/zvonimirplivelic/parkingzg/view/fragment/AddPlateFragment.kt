@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.Navigation
 import com.zvonimirplivelic.parkingzg.R
 import com.zvonimirplivelic.parkingzg.model.CarInfo
 import com.zvonimirplivelic.parkingzg.viewmodel.AddPlateViewModel
@@ -44,9 +45,12 @@ class AddPlateFragment : Fragment() {
             carManufacturer.isNullOrEmpty() ||
             carModel.isNullOrEmpty()
         ) {
-            Toast.makeText(activity, "Molimo vas da popunite sva polja", Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, "Molimo vas da popunite sva polja!!!", Toast.LENGTH_SHORT).show()
         } else {
             viewModel.addPlateToDatabase(plateNumber, carManufacturer, carModel)
+
+            val action = AddPlateFragmentDirections.actionAddPlateFragmentToPlatesFragment()
+            Navigation.findNavController(btnAddPlate).navigate(action)
         }
     }
 }
